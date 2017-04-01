@@ -56,3 +56,7 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
 }
+
+
+// Checkstyle
+apply plugin: 'checkstyle'
