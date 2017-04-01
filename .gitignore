@@ -1,0 +1,4 @@
+# ignore directories gradle &  build
+/gradle-project/.gradle/
+/gradle-project/build/
+
