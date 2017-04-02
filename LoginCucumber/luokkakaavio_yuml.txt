@@ -1,0 +1,9 @@
+%2F%2F Cool Class Diagram, 
+[ConsolIO]-^[IO],
+[StubIO]-^[IO],
+[InMemoryUsrDao]-^[UserDao],
+[InMemoryUsrDao]->[User]
+[AuthenticationService]->[UserDao]
+[App]->[IO]
+[App]->[AuthenticationService]
+

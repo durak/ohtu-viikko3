@@ -5,3 +5,8 @@
 /HelloCucumber/.nb-gradle/
 /HelloCucumber/build/
 /HelloCucumber/.gradle/
+
+
+/LoginCucumber/.gradle/
+/LoginCucumber/build/
+/LoginCucumber/.nb-gradle/
