@@ -8,7 +8,7 @@ import ohtu.data_access.UserDao;
 public class AuthenticationService {
 
     private UserDao userDao;
-
+    
     public AuthenticationService(UserDao userDao) {
         this.userDao = userDao;
     }
