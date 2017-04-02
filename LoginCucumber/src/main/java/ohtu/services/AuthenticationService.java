@@ -39,7 +39,23 @@ public class AuthenticationService {
     }
 
     private boolean invalid(String username, String password) {
-        // validity check of username and password
+        // username at least 3 chars long
+        if (username.length() < 3) {
+            return true;
+        }
+        // username not in use
+        if (userDao.findByName(username) != null) {
+            return true;
+        }
+        // password at least 8 chars
+        if (password.length() < 8) {
+            return true;
+        }
+        // password contains number or special char
+        if (password.matches("[a-zA-Z]+")) {
+            return true;
+        }
+        
 
         return false;
     }
