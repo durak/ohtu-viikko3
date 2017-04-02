@@ -9,6 +9,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 import ohtu.io.*;
 import ohtu.data_access.*;
+import ohtu.domain.User;
 import ohtu.services.*;
 
 public class Stepdefs {
@@ -21,8 +22,7 @@ public class Stepdefs {
 
     @Given("^user \"([^\"]*)\" with password \"([^\"]*)\" is created$")
     public void user_with_password_is_created(String username, String password) throws Throwable {
-        inputLines.add("new");
-        a_username_and_password_are_entered(username, password);
+        auth.createUser(username, password);
     }
 
     @Given("^command login is selected$")
